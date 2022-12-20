@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { HiOutlineHashtag, HiOutlineHome,HiOutlineMenu,  HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-
+import musicHeart from '../assets/music-heart.png'
 const links = [
     { name: 'Discover', to: '/', icon: HiOutlineHome },
     { name: 'Albums', to: '/albums', icon: HiOutlinePhotograph },
@@ -32,7 +32,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#301008] opacity-100">
-        <img src='https://icons8.com/icon/rI-3G2uuvZkr/music-heart' alt="logo" className="object-contain w-full h-14" />
+        <img src={musicHeart} alt="logo" className="object-contain w-full h-14" />
         <NavLinks />
       </div>
 
